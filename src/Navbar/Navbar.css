@@ -1,0 +1,11 @@
+.navbar{
+    background-color: var(--primary-color);
+    color: rgb(240, 240, 240);
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navTitle{
+    font-weight: 300;
+}
