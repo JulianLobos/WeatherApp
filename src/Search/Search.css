@@ -1,0 +1,6 @@
+.searchNav{
+    background-color: var(--secundary-color);
+    height: 100vh;
+    width: 30vh;
+    color: white;
+}
