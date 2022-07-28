@@ -3,7 +3,13 @@ import './Search.css';
 
 const Search = () => {
   return (
-    <div className='searchNav'>Search</div>
+    <div className='searchNav'>
+      <p className='searchTitle'>Search city</p>
+      <form>
+        <input placeholder='City'></input>
+        <button>Buscar</button>
+      </form>
+    </div>
   )
 }
 
