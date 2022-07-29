@@ -1,25 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Main.css';
+import { useContext } from 'react';
+
+import { Context } from '../Context/Context';
 
 const Main = () => {
-    const[currentCity, setCurrentCity] = useState();
-    
-    const getApiData = async () => {
-        const response = await fetch(
-          "https://api.openweathermap.org/data/2.5/weather?q=Salta&appid=1bb7ba42770051d1333e1ffe82d9d9f9"
-        ).then((response) => response.json());
-        setCurrentCity(response);
-    };
-
-    useEffect(() => {
-        getApiData();
-      }, []);
-
-    console.log(currentCity)
+  const { currentCity } = useContext(Context);
+  console.log(currentCity);
     return (
-    <div>
+    <div className='main'>
         <div className='temperatureContainer'>
-            <p className='temperatureContainerText'>La temperatura actual en la ciudad de {currentCity.name} es de {parseFloat(currentCity.main.temp - 273.15).toFixed(2)}°</p>
+            {currentCity && currentCity.cod === 200 ? <div className='degreesContainer'>
+              <p className='bigNumbers'>{parseFloat(currentCity.main.temp - 273.15).toFixed(1)}°</p>
+              <p className='cityName'>{currentCity.name}, {currentCity.sys.country}</p>
+              <p className='feelsLike'>Sensación térmica: {parseFloat(currentCity.main.feels_like - 273.15).toFixed(1)}°</p>
+            </div> : 
+            <div className='errorPageNotFound'> 
+              <p className='errorMessage'>City not found</p>
+            </div>}
         </div>
     </div>
   )

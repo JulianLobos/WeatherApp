@@ -1,6 +1,49 @@
 .searchNav{
     background-color: var(--secundary-color);
     height: 100vh;
-    width: 30vh;
+    width: 20vw;
     color: white;
+    padding: 0.5rem;
+}
+
+.searchTitle{
+    font-weight: 100;
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.searchForm>input{
+    height: 30px;
+    padding: 0.25rem;
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    margin: 0 0 0.5rem 0;
+}
+
+.searchForm>input:focus{
+    outline: 3px solid black;
+}
+
+.searchForm> button{
+    background-color: var(--button-color);
+    color: white;
+    height: max-content;
+    width: max-content;
+    padding: 0.25rem 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchForm> button:hover{
+    background-color: var(--button-hover-color);
+}
+
+.searchForm> button:active, .searchForm> button:focus{
+    outline: 2px solid black;
 }

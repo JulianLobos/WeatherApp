@@ -6,7 +6,7 @@
   --secundary-color: #00a8e8;
   --button-color: #003459;
   --button-hover-color: #044e83;
-  --border-radius: 5px;
+  --border-radius: 8px;
 }
 
 *{
@@ -18,4 +18,8 @@
 body{
   background-color: var(--bg-color);
   font-family: 'Archivo', sans-serif;
+}
+
+.mainContainer{
+  display: flex;
 }
