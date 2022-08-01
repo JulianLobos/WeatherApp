@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-  --bg-color: #00171f;
+  --bg-color: #0093E9;
   --primary-color: #007ea7;
   --secundary-color: #00a8e8;
   --button-color: #003459;
@@ -17,9 +17,15 @@
 
 body{
   background-color: var(--bg-color);
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: var(--bg-color);
   font-family: 'Archivo', sans-serif;
+  height: 100vh;
 }
 
 .mainContainer{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

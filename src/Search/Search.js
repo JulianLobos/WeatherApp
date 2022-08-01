@@ -18,9 +18,8 @@ const Search = () => {
 
   return (
     <div className='searchNav'>
-      <p className='searchTitle'>Search city</p>
       <form className='searchForm'>
-        <input onChange={updateCity} placeholder='City' name='City' value={values}></input>
+        <input onChange={updateCity} placeholder='Search City' name='City' value={values}></input>
         <button onClick={searchSubmit}>Buscar</button>
       </form>
     </div>
