@@ -47,9 +47,15 @@ const Main = () => {
     <div className='main'>
         <div className='temperatureContainer'>
             {currentCity && currentCity.cod === 200 ? <div className='degreesContainer'>
+              <img className='img' src={`/weatherIcons/${currentCity.weather[0].icon}.png`} alt={currentCity.weather[0].description}></img>
+              <p className='weatherDescription'>{currentCity.weather[0].description}</p>
               <p className='bigNumbers'>{parseFloat(currentCity.main.temp - 273.15).toFixed(1)}°</p>
               <p className='cityName'>{currentCity.name}, {currentCity.sys.country}</p>
-              <p className='feelsLike'>Sensación térmica: {parseFloat(currentCity.main.feels_like - 273.15).toFixed(1)}°</p>
+              <p className='clouds'>Clouds: {currentCity.clouds.all}%</p>
+              <p className='feelsLike'>Feels like: {parseFloat(currentCity.main.feels_like - 273.15).toFixed(1)}°</p>
+              <p className='humidity'><img className='icon' alt='humidity icon' src='/weatherIcons/humidity.svg'></img>Humidity: {currentCity.main.humidity}%</p>
+              <p className='wind'><img className='icon' alt='wind icon' src='/weatherIcons/wind.svg'></img>Wind: {currentCity.wind.speed} m/s</p>
+              <p className='pressure'><img className='icon' alt='pressure icon' src='/weatherIcons/pressure.svg'></img>Pressure: {currentCity.main.pressure} hPa</p>
             </div> : 
             <div className='errorPageNotFound'> 
               <p className='errorMessage'>City not found</p>

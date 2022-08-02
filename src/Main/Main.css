@@ -1,6 +1,6 @@
 .main{
     width: 80vw;
-    padding: 1.5rem;
+    padding: 0.5rem 2rem 4rem 2rem;
 }
 
 .temperatureContainer{
@@ -11,7 +11,7 @@
 
 .degreesContainer{
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius);
     width: 600px;
     display: flex;
@@ -26,7 +26,10 @@
 }
 
 .cityName{
-    font-weight: 300;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0.25rem 0;
 }
 
 .errorPageNotFound{
@@ -43,4 +46,19 @@
     border-radius: var(--border-radius);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     cursor: not-allowed;
+}
+
+.img{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.icon{
+    width: 12px;
+    margin: 0 0.25rem 0 0;
+    vertical-align: middle;
+}
+
+.clouds, .wind, .pressure, .feelsLike, .humidity{
+    margin: 0 0 0.25rem 0;
 }
