@@ -46,12 +46,15 @@
 }
 
 .errorMessage{
-    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.75rem;
     font-weight: 100;
-    background-color: var(--button-color);
-    padding: 1rem 3rem;
-    border-radius: var(--border-radius);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    padding: 1rem 2rem;
     cursor: not-allowed;
 }
 
