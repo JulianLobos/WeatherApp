@@ -20,12 +20,11 @@
 }
 
 .searchForm>input:focus{
-    outline: 3px solid black;
+    outline: 2px solid #1CB5E0;
 }
 
 .searchForm> button{
     background-color: var(--button-color);
-    color: white;
     height: 30px;
     width: max-content;
     padding: 0.25rem 1.5rem;
@@ -39,6 +38,7 @@
 
 .searchForm> button:hover{
     background-color: var(--button-hover-color);
+    color: white;
 }
 
 .searchForm> button:active, .searchForm> button:focus{

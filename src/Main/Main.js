@@ -56,7 +56,7 @@ const Main = () => {
               <p className='humidity'><img className='icon' alt='humidity icon' src='/weatherIcons/humidity.svg'></img>Humidity: {currentCity.main.humidity}%</p>
               <p className='wind'><img className='icon' alt='wind icon' src='/weatherIcons/wind.svg'></img>Wind: {currentCity.wind.speed} m/s</p>
               <p className='pressure'><img className='icon' alt='pressure icon' src='/weatherIcons/pressure.svg'></img>Pressure: {currentCity.main.pressure} hPa</p>
-            </div> : 
+            </div>: 
             <div className='errorPageNotFound'> 
               <p className='errorMessage'>City not found</p>
             </div>}
@@ -66,3 +66,4 @@ const Main = () => {
 }
 
 export default Main
+

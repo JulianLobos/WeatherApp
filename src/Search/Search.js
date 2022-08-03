@@ -14,6 +14,7 @@ const Search = () => {
   const searchSubmit = (e) => {
     e.preventDefault();
     getApiData(values);
+    setValues('');
   }
 
   return (

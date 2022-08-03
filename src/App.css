@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html{
+  height: 100%;
+}
+
 :root{
   --bg-color: #0093E9;
   --primary-color: #007ea7;
   --secundary-color: #00a8e8;
-  --button-color: #003459;
-  --button-hover-color: #044e83;
+  --button-color: #1CB5E0;
+  --button-hover-color: rgb(7, 55, 89);
   --border-radius: 8px;
 }
 
@@ -15,13 +19,21 @@
   box-sizing: border-box;
 }
 
+.App{
+  height: 100%;
+  background: #000046;
+  background: -webkit-linear-gradient(to top, #1CB5E0, #000046); 
+  background: linear-gradient(to top, #1CB5E0, #000046); 
+  background-repeat: no-repeat;
+}
+
+#root{
+  height: 100%;
+}
+
 body{
-  background-color: #FF3CAC;
-  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-  background-color: var(--bg-color);
   font-family: 'Archivo', sans-serif;
-  height: auto;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .mainContainer{
